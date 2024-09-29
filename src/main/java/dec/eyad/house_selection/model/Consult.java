@@ -18,9 +18,9 @@ public class Consult {
     @Column(name = "idConsult")
     private Long idConsult;
     @Column(name = "age")
-    private String age;
+    private int age;
     @Column(name = "children")    
-    private LocalDate children;
+    private int children;
     @Column(name = "location") 
     private String location;
     @Column(name = "behavior") 
@@ -30,7 +30,7 @@ public class Consult {
 
     }
 
-    public Consult(Long idConsult, String name, LocalDate dateConsult, String typeConsult, String description) {
+    public Consult(Long idConsult, int age, int children, String location, String behavior) {
         this.idConsult = idConsult;
         this.age = age;
         this.children = children;
@@ -46,19 +46,19 @@ public class Consult {
         this.idConsult = idConsult;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public LocalDate getChildren() {
+    public int getChildren() {
         return children;
     }
 
-    public void setChildren(LocalDate children) {
+    public void setChildren(int children) {
         this.children = children;
     }
 
@@ -77,5 +77,8 @@ public class Consult {
     public void setBehavior(String behavior) {
         this.behavior = behavior;
     }
+
+
+    
    
 }
