@@ -1,8 +1,5 @@
 package dec.eyad.house_selection.model;
 
-
-import java.time.LocalDate;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -78,7 +75,7 @@ public class Consult {
         this.behavior = behavior;
     }
 
-
     
-   
+
+
 }
