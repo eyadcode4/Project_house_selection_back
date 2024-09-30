@@ -74,8 +74,4 @@ public class Consult {
     public void setBehavior(String behavior) {
         this.behavior = behavior;
     }
-
-    
-
-
 }
