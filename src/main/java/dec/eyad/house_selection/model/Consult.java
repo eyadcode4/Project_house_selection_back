@@ -1,5 +1,7 @@
 package dec.eyad.house_selection.model;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,25 +16,25 @@ public class Consult {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idConsult")
     private Long idConsult;
-    @Column(name = "age")
-    private int age;
-    @Column(name = "children")    
-    private int children;
-    @Column(name = "location") 
-    private String location;
-    @Column(name = "behavior") 
-    private String behavior;
+    @Column(name = "name")
+    private String name;
+    @Column(name = "dateConsult")    
+    private LocalDate dateConsult;
+    @Column(name = "locationSite") 
+    private String locationSite;
+    @Column(name = "generalBehavior") 
+    private String generalBehavior;
 
     public Consult(){
 
     }
 
-    public Consult(Long idConsult, int age, int children, String location, String behavior) {
+    public Consult(Long idConsult, String name, LocalDate dateConsult, String locationSite, String generalBehavior) {
         this.idConsult = idConsult;
-        this.age = age;
-        this.children = children;
-        this.location = location;
-        this.behavior = behavior;
+        this.name = name;
+        this.dateConsult = dateConsult;
+        this.locationSite = locationSite;
+        this.generalBehavior = generalBehavior;
     }
 
     public Long getIdConsult() {
@@ -43,35 +45,38 @@ public class Consult {
         this.idConsult = idConsult;
     }
 
-    public int getAge() {
-        return age;
+    public String getName() {
+        return name;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getChildren() {
-        return children;
+    public LocalDate getDateConsult() {
+        return dateConsult;
     }
 
-    public void setChildren(int children) {
-        this.children = children;
+    public void setDateConsult(LocalDate dateConsult) {
+        this.dateConsult = dateConsult;
     }
 
-    public String getLocation() {
-        return location;
+    public String getLocationSite() {
+        return locationSite;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setLocationSite(String locationSite) {
+        this.locationSite = locationSite;
     }
 
-    public String getBehavior() {
-        return behavior;
+    public String getGeneralBehavior() {
+        return generalBehavior;
     }
 
-    public void setBehavior(String behavior) {
-        this.behavior = behavior;
+    public void setGeneralBehavior(String generalBehavior) {
+        this.generalBehavior = generalBehavior;
     }
+    
 }
+
+   

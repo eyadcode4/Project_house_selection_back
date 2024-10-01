@@ -1,2 +1,6 @@
-INSERT INTO consults (id_consult, age, children, behavior, location) 
-VALUES (default, 30, 2, 'calm', 'NY');
+INSERT INTO consults (id_consult, name, date_consult, location_site, general_behavior) 
+VALUES
+
+(default, 'juan', '2023-04-01', 'Oviedo', 'Depot');
+(default, 'jorge', '2023-04-01', 'Oviedo', 'Depot');
+
